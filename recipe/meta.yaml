@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "ribasim-api" %}
-{% set version = "2024.11.0" %}
+{% set version = "2025.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ribasim_api-{{ version }}.tar.gz
-  sha256: be5e8eabb010d950e03fff903eb2cfbdd8e3962efb0a09c4043070938fc7b7fc
+  sha256: 6d24d16a0ca9279c26a8db3308c56ec9ef68d7803a137434f71907cb9c7926d9
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
