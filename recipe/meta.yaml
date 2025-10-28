@@ -1,4 +1,4 @@
-{% set python_min = "3.11" %}
+{% set python_min = "3.12" %}
 {% set name = "ribasim-api" %}
 {% set version = "2025.6.0" %}
 
